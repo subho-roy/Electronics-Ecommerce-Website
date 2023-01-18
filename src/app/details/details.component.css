@@ -1,0 +1,95 @@
+.image {
+  height: 300px;
+  width: 100%;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  height: 550px;
+  position: relative;
+  text-align: center;
+  /* border: 3px solid #dbe4ed;   */
+}
+.title {
+  font-size: 250%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 3%;
+  width: 100%;
+  /* text-align: center; */
+}
+
+.pro-details .nav-item {
+  height: 50px;
+}
+.item {
+  display: flex;
+  text-align: center;
+}
+.hello {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.bord {
+  border-color: black;
+
+}
+.description{
+  display: flex;
+  justify-content: start;
+  font-size: 100%;
+  
+}
+.product{
+  /* display: flex; */
+  /* justify-content: start; */
+  font-size: medium;
+  margin-left: 5px;
+}
+.buy{
+  display:flex;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+.buy1{
+  width:30%;
+}
+.buy2{
+  margin-left: 10px;
+  width:30%;
+}
+.form-control{
+  margin-bottom: 4px;
+}
+.btn{
+  background-color: orangered;
+  color:white;
+  width:70%;
+}
+.back{
+  margin-left: 10px;
+  
+}
+.back1{
+  border:0px;
+  background-color: blue;
+  padding:5px;
+  color:white;
+  border-radius: 5px;
+}
+
+.pic:hover{
+  color: white;
+
+}

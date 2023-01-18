@@ -1,0 +1,40 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background-image: linear-gradient(
+      to right,
+      rgb(135, 187, 235),
+      rgb(233, 6, 221)
+    ); */
+  }
+  form {
+    width: 300px;
+    background-color: aliceblue;
+  }
+  .form-label{
+      font-weight:bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .fs-3{
+      font-weight: bolder;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  }
+  .button{
+      
+      padding:2px;
+      color:white;
+      border:none;
+      border-radius: 16px;
+      box-shadow: 3px 3px 3px black;
+      background-image:linear-gradient(
+          to right,
+          rgb(135, 187, 235),
+          rgb(233, 6, 221)
+        ); 
+  }
+  
+  
+  

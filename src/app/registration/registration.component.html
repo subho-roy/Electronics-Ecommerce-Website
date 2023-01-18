@@ -1,0 +1,68 @@
+<!-- <p>registration works!</p> -->
+<div class="container">
+    <form class="border rounded p-4" [formGroup]="addForm" (ngSubmit)="submit()">
+      <div class="row g-0 head">
+        <div class="col text-center mb-4 p-0">
+          <span class="fs-3 ">Register</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <div class="form-group">
+            <label class="form-label">FIRST NAME :</label>
+            <input
+              class="form-control"
+              type="text"
+              formControlName="first_name"
+            />
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label class="form-label">LAST NAME :</label>&nbsp;
+            <input class="form-control" type="text" formControlName="last_name" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <div class="form-group">
+            <label class="form-label">EMAIL :</label>&nbsp;
+            <input class="form-control" type="email" formControlName="email" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <div class="form-group">
+            <label class="form-label">PASSWORD :</label>&nbsp;
+            <input
+              class="form-control"
+              type="password"
+              formControlName="password"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col mb-3 mt-2">
+          <div class="cofm-group">
+            <label class="form-label">PROFILE PIC :</label>&nbsp;
+            <input
+              type="file"
+              formControlName="profile_pic"
+              (change)="onFileSelected($event)"
+            />
+          </div>
+        </div>
+      </div> -->
+      <div class="row m-6">
+        <div class="col-6 offset-3">
+          <div class="d-grid">
+            <input class="button" type="submit" value="Sign Up" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  

@@ -1,0 +1,11 @@
+/* .image{
+    height:160px;
+
+}
+ */
+ .card-img-top{
+    height:160px !important;
+ }
+ .card-body{
+    height:350px;
+ }

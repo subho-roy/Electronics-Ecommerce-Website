@@ -1,0 +1,21 @@
+<app-image></app-image>
+<div class="container mt-5 mb-5">
+  <div class="row" display="flex">
+    <div class="col-md-4" *ngFor="let value of store">
+      <div class="card size" style="width: 18rem">
+        <img src="{{ value.img }}" class="card-img-top " alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ value.prod_name }}</h5>
+          <p class="card-text">{{ value.desc }}</p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            routerLink="/category/{{ value.prod_name }}"
+            >Go Category</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

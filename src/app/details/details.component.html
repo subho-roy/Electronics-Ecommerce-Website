@@ -1,0 +1,105 @@
+<!-- <button type="button" class="btn btn-primary">Back</button> -->
+
+<app-mod></app-mod>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-">
+      <div class="center">
+        <img src="{{ sub_prod.details.img }}" class="image" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div>
+    <div class="title">
+      <b>{{ sub_prod.details.title }}</b>
+    </div>
+  </div>
+  <div>
+    <div class="desc">
+      <p>{{ sub_prod.details.desc }}</p>
+    </div>
+  </div>
+</div>
+ -->
+
+<div class="container">
+  <div style="border-color: black" class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-12">
+          <img src="{{ sub_prod.details.img[ind] }}" class="image" />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div
+          class="col-4 pic"
+          *ngFor="let i of sub_prod.details.img; let d = index"
+          (mouseover)="chngeImg(d)"
+        >
+          <div class="card">
+            <img src="{{ i }}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2>
+        {{ sub_prod.details.title }} ({{ sub_prod.details.specs.rom }} ROM) ({{
+          sub_prod.details.specs.ram
+        }}
+        RAM)
+      </h2>
+      <h3>₹{{ sub_prod.details.specs.price }}</h3>
+      <p>Available offers</p>
+      <ul>
+        <li class="pb-2">
+          <b>Bank Offer</b> 5% Unlimited Cashback on Bank Credit Card <b>T&C</b>
+        </li>
+        <li>
+          <b>Bank Offer</b> 5% Instant Discount on EMI with Bank Credit and
+          Debit Cards <b>T&C</b>
+        </li>
+      </ul>
+      <br />
+      <br />
+
+      <div class="buy">
+        <button
+          type="button"
+          class="btn"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Buy Now
+        </button>
+        <a class="back" routerLink="/category/{{ per_prod.prod_name }}"
+          ><input class="back1" type="button" value="Back"
+        /></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="product">
+  <div>
+    <div class="d-flex justify-content-between">
+      <h2>
+        {{ sub_prod.details.title }} ({{
+          sub_prod.details.specs.rom
+        }}
+        ROM) ({{ sub_prod.details.specs.ram }} RAM)
+      </h2>
+    </div>
+
+    <div class="d-flex justify-content-between">
+      <h1>PRICE :{{ sub_prod.details.specs.price }}</h1>
+    </div>
+  </div>
+  <div class="d-flex justify-content-between">
+    <p style="font-size: large">Inside Box :</p>
+  </div>
+</div> -->
